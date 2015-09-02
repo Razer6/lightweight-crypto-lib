@@ -143,7 +143,7 @@ rm -f $C_FILE $FILE
 cat <<EOM >$C_FILE
 #include <stdio.h>
 #include <stdlib.h>
-int main(int argc, char* argv[]){
+int main(int argc, char** argv){
 #ifdef __i386__
 	return 1;
 #endif
@@ -214,7 +214,7 @@ cat <<EOM >$C_FILE
 #include <stdio.h>
 #include <stdlib.h>
 #include "common/helpers.h"
-int main(int argc, char* argv[]){
+int main(int argc, char** argv){
 	return 0;
 }
 EOM
